@@ -11,7 +11,6 @@ function Pagination() {
   const totalPages = Math.ceil(data.length / itemsPerPage);
 
   const endingIndex = itemsPerPage * currentPage;
-  console.log("EI:", endingIndex);
 
   const prevThreePages = Array.from(
     { length: 3 },
@@ -26,19 +25,10 @@ function Pagination() {
   ).filter((page) => page < totalPages);
 
   const pages = [...prevThreePages, currentPage, ...nextThreePages];
-  console.log(pages);
-
   const startingIndex = endingIndex - itemsPerPage;
-  console.log("SI:", startingIndex);
-
   const currentItems = data.slice(startingIndex, endingIndex);
 
-  /*
-  
-1st page - >  si(1), ei(10)
-2nd page -> si(11), ei(20)
 
- */
 
   const goToPrev = () => {
     if (currentPage > 1) {
@@ -78,7 +68,7 @@ function Pagination() {
             </button>
 
             {pages.map((page) => (
-              <button className={page === currentPage ? 'active btn' : 'btn'} onClick={() => handlePage(page)}>
+              <button className={page === currentPage ? 'active btn' : 'btn'} onClick={() => handlePage(page)} key={page}>
                 {" "}
                 {page}{" "}
               </button>
