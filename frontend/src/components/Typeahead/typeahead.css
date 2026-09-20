@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.typeahead-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.search {
+  margin-top: 20px;
+}
+
+input {
+  height: 2rem;
+  width: 200px;
+}

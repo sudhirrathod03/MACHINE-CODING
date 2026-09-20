@@ -5,13 +5,12 @@ import viteLogo from "./assets/vite.svg";
 import Pagination from "./components/Pagination";
 import Otp from "./components/Otp";
 import Carousel from "./components/Carousel";
+import Typeahead from "./components/Typeahead/Typeahead";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Carousel />
+      <Typeahead />
     </>
   );
 }
