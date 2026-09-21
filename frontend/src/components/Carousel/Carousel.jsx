@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "../styles/carousel.css";
-import imageData from "../service/images.json";
-
-console.log(imageData[1].download_url);
+import styles from "./carousel.module.css";
+import imageData from "../../service/images.json";
 function Carousel() {
   const [currentImage, setCurrentImage] = useState(2);
   const [isHovered, setIsHovered] = useState(false);
@@ -36,20 +34,20 @@ function Carousel() {
 
   return (
     <>
-      <h1>IMAGE CAROUSEL</h1>
+      <h1 className={styles.heading}>IMAGE CAROUSEL</h1>
       <div
-        className="container"
+        className={styles.container}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="left-btn" onClick={goToPrev}>
+        <div className={styles.left - btn} onClick={goToPrev}>
           {" "}
           {"<"}{" "}
         </div>
 
         <img src={imageData[currentImage].download_url} alt="" />
 
-        <div className="right-btn" onClick={goToNext}>
+        <div className={styles.right - btn} onClick={goToNext}>
           {">"}{" "}
         </div>
       </div>

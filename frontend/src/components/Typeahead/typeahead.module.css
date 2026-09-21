@@ -1,0 +1,38 @@
+.typeahead-container {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+}
+
+.search {
+  margin-top: 20px;
+}
+
+input {
+  height: 2rem;
+  width: 300px;
+  font-size: 1.2rem;
+}
+
+.result {
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(5, 0, 0, 0.4);
+}
+
+.result li {
+  list-style: none;
+  margin: 5px;
+  padding: 8px;
+}
+
+.result li:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  background-color: rgba(126, 126, 126, 0.173);
+  border-radius: 10px;
+}

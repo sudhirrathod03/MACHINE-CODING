@@ -3,10 +3,10 @@
   margin: 0;
 }
 
-h1 {
+.heading {
   position: absolute;
   top: 2rem;
-left: 40%;
+  left: 40%;
 }
 img {
   height: 400px;
