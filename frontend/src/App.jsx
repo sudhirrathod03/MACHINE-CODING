@@ -6,11 +6,12 @@ import Pagination from "./components/Pagination/Pagination";
 import Otp from "./components/Otp/Otp";
 import Carousel from "./components/Carousel/Carousel";
 import Typeahead from "./components/Typeahead/Typeahead";
+import MultiSelect from "./components/multiSelect/MultiSelect";
 
 function App() {
   return (
     <>
-      <Typeahead />
+      <MultiSelect />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./pagination.css";
 function Pagination() {
-  const [currentPage, setCurrentPage] = useState(4);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const data = Array.from({ length: 100 }, (_, idx) => ({
     id: idx,

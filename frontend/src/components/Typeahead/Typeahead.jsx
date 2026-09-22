@@ -98,6 +98,7 @@ function Typeahead() {
               setDropDown(true);
               setQuery(e.target.value);
             }}
+            className={styles.tinput}
           />
         </div>
 

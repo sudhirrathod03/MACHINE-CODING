@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import "./otp.css";
+import "./otp.module.css";
 function Otp({ otpLength = 6 }) {
   const [otp, setOtp] = useState(Array.from({ length: otpLength }).fill(""));
   const inputRef = useRef([]);
