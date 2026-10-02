@@ -7,11 +7,12 @@ import Otp from "./components/Otp/Otp";
 import Carousel from "./components/Carousel/Carousel";
 import Typeahead from "./components/Typeahead/Typeahead";
 import MultiSelect from "./components/multiSelect/MultiSelect";
+import Accordion from "./components/accordion/Accordion";
 
 function App() {
   return (
     <>
-      <MultiSelect />
+      <Accordion />
     </>
   );
 }

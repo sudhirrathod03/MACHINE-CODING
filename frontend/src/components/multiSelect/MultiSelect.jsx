@@ -8,6 +8,7 @@ const inputs = [
   { id: 4, value: "checkbox 4", checked: false },
   { id: 5, value: "checkbox 5", checked: false },
 ];
+
 function MultiSelect() {
   const [select, setSelect] = useState(inputs);
 
