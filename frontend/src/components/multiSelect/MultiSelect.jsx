@@ -34,11 +34,7 @@ function MultiSelect() {
   return (
     <>
       <div className={styles.multicontainer}>
-        <h2 className={styles.title}>Multi-Select</h2>
-
-        <p className={styles.description}>
-          Select one or more options from the list.
-        </p>
+        <h2 className={styles.title}>Multi Select</h2>
 
         <label className={`${styles.mlabel} ${styles.selectAll}`}>
           <strong>Select All</strong>
