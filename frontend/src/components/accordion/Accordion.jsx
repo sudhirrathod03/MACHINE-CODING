@@ -12,6 +12,8 @@ const data = Array.from({ length: 5 }, (_, idx) => ({
 function Accordion() {
   const [accordion, setAccordion] = useState(data);
 
+
+  //multiple option
   const handleClick = (id) => {
     setAccordion((prev) =>
       prev.map((option) =>
@@ -21,6 +23,16 @@ function Accordion() {
       )
     );
   };
+
+  //single option
+  // const handleClick = (id) => {
+  //   setAccordion((prev) =>
+  //     prev.map((option) => ({
+  //       ...option,
+  //       isOpen: option.id === id ? !option.isOpen : false,
+  //     }))
+  //   );
+  // };
 
   return (
     <div className={style.container}>

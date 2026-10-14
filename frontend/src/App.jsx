@@ -8,11 +8,12 @@ import Carousel from "./components/Carousel/Carousel";
 import Typeahead from "./components/Typeahead/Typeahead";
 import MultiSelect from "./components/multiSelect/MultiSelect";
 import Accordion from "./components/accordion/Accordion";
+import Products from "./components/fetchData/Products";
 
 function App() {
   return (
     <>
-      <Accordion />
+      <Products />
     </>
   );
 }
