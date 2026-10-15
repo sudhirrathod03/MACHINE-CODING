@@ -24,7 +24,8 @@ function Products() {
         {products.map((prod) => (
            <div key={prod.id} className={style.box}>
             <h2> {prod.title} </h2>
-            <p>{prod.description}</p>
+            <p>{prod.description}</p> 
+            
             <span> $ {prod.price} </span>
           </div>
         ))}
