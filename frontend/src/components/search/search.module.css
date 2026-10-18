@@ -1,0 +1,15 @@
+.userInput{
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.searchContainer{
+ margin: auto;
+ padding: 10px;
+ height: 80vh;
+ width: 80vw;
+
+
+}

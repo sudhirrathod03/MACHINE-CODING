@@ -9,11 +9,12 @@ import Typeahead from "./components/Typeahead/Typeahead";
 import MultiSelect from "./components/multiSelect/MultiSelect";
 import Accordion from "./components/accordion/Accordion";
 import Products from "./components/fetchData/Products";
+import Search from "./components/search/Search";
 
 function App() {
   return (
     <>
-      <Products />
+      <Search />
     </>
   );
 }
