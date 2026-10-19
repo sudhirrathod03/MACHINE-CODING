@@ -7,6 +7,7 @@ function Search() {
   useEffect(() => {
     async function fetchData() {
       try {
+        
         const res = await fetch("https://dummyjson.com/users");
         const data = await res.json();
         setUsers(data.users);
