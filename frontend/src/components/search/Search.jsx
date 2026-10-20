@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import styles from "./search.module.css";
 function Search() {
   const [users, setUsers] = useState([]);
@@ -7,7 +7,6 @@ function Search() {
   useEffect(() => {
     async function fetchData() {
       try {
-        
         const res = await fetch("https://dummyjson.com/users");
         const data = await res.json();
         setUsers(data.users);
@@ -22,9 +21,19 @@ function Search() {
     setSearch(e.target.value);
   }
 
-  const filterredUser = users.filter((user) =>
-    user.firstName.toLowerCase().includes(search.toLowerCase()),
-  );
+  // const filterredUser = users.filter(
+  //   (user) => user.firstName.toLowerCase().includes(search.toLowerCase()),
+  //   console.log("calculated"),
+  // );
+
+  const searchUser = useMemo(() => {
+    console.log("cal");
+    return users.filter((user) => {
+      return user.firstName.toLowerCase().includes(search.toLowerCase());
+    });
+  }, [users, search]);
+console.log(searchUser);
+
 
   return (
     <>
@@ -33,13 +42,13 @@ function Search() {
           type="text"
           placeholder="Search"
           className={styles.userInput}
-          onChange={(e) => handleChange(e)}
+          onChange={handleChange}
           value={search}
         />
 
         {
           <ul>
-            {filterredUser.map((user) => (
+            {searchUser.map((user) => (
               <li key={user.id}>{user.firstName}</li>
             ))}
           </ul>
