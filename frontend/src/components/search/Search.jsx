@@ -21,10 +21,7 @@ function Search() {
     setSearch(e.target.value);
   }
 
-  // const filterredUser = users.filter(
-  //   (user) => user.firstName.toLowerCase().includes(search.toLowerCase()),
-  //   console.log("calculated"),
-  // );
+
 
   const searchUser = useMemo(() => {
     console.log("cal");
