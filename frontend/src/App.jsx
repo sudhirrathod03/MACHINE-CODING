@@ -10,11 +10,12 @@ import MultiSelect from "./components/multiSelect/MultiSelect";
 import Accordion from "./components/accordion/Accordion";
 import Products from "./components/fetchData/Products";
 import Search from "./components/search/Search";
+import Vertualization from "./components/vertualization/Vertualization";
 
 function App() {
   return (
     <>
-      <Search />
+      <Vertualization />
     </>
   );
 }

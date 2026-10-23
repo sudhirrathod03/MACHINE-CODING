@@ -1,0 +1,23 @@
+.outerContainer {
+  height: 100vh;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.listContainer {
+  height: 600px;
+  border: 1px solid black;
+  width: 300px;
+  margin: auto;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.items {
+  height: 50px;
+  border: 1px solid black;
+  padding: 2px;
+  margin: 10px;
+  list-style: none;
+  background-color: cornflowerblue;
+}
