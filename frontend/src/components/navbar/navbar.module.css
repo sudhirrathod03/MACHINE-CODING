@@ -1,0 +1,39 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 80px;
+  background-color: black;
+  color: white;
+}
+
+.navTabs {
+  width: 400px;
+}
+
+.navTabs ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: 10px;
+}
+.userOpt button {
+
+  margin-right: 5px;
+  border: none;
+  height: 30px;
+  width: 70px;
+cursor: pointer;
+}
+.login{
+    background-color: skyblue;
+}
+.active {
+  border-bottom: 2px solid cornflowerblue;
+}
+
+.navTabs ul li:hover {
+  border-bottom: 1px solid cornflowerblue;
+}
