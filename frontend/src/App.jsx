@@ -12,11 +12,12 @@ import Products from "./components/fetchData/Products";
 import Search from "./components/search/Search";
 import Vertualization from "./components/vertualization/Vertualization";
 import Navbar from "./components/navbar/Navbar";
+import MultiStep from "./components/multistep/MultiStep";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <MultiStep />
     </>
   );
 }

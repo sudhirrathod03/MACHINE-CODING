@@ -1,0 +1,39 @@
+.multistepContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.pages {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: grey;
+  text-align: center;
+  position: absolute;
+  margin-bottom: 10px;
+
+}
+.line {
+  width: 10px;
+  height: 100px;
+  /* background-color: black; */
+  position: relative;
+  top: 50px;
+  left: 20px;
+
+}
+
+
+
+.active {
+  background-color: cornflowerblue;
+}
+
+.btn{
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
