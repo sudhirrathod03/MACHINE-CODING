@@ -4,6 +4,7 @@ function MultiStep({ pages = 5 }) {
   const totalPages = Array.from({ length: pages }, (_, idx) => ({
     pageNo: `${idx + 1}`,
     id: idx,
+    content:``
   }));
 
   const [currentStep, setCurrentStep] = useState(0);

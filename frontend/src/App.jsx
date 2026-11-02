@@ -13,11 +13,16 @@ import Search from "./components/search/Search";
 import Vertualization from "./components/vertualization/Vertualization";
 import Navbar from "./components/navbar/Navbar";
 import MultiStep from "./components/multistep/MultiStep";
+import ProgressBar from "./components/progressbar/ProgressBar";
 
 function App() {
+
+
   return (
     <>
-      <MultiStep />
+      <ProgressBar />
+
+
     </>
   );
 }
