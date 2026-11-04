@@ -1,0 +1,13 @@
+.fileContainer {
+  border-left: 1px solid black;
+  padding-left: 0.5rem;
+  margin: 10px;
+}
+
+.fileName {
+  font-size: 15px;
+}
+.fileName span {
+  margin: 0.5rem;
+  cursor: pointer;
+}

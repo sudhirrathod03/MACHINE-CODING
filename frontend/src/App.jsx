@@ -14,15 +14,13 @@ import Vertualization from "./components/vertualization/Vertualization";
 import Navbar from "./components/navbar/Navbar";
 import MultiStep from "./components/multistep/MultiStep";
 import ProgressBar from "./components/progressbar/ProgressBar";
-
+import FileExplorer from "./components/fileExplorer/FileExplorer";
+import data from "./service/fileData.json";
 function App() {
-
-
   return (
     <>
-      <ProgressBar />
-
-
+          <h1>File Explorer</h1>
+      <FileExplorer fileData={data} />
     </>
   );
 }
