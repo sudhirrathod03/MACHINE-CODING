@@ -16,11 +16,11 @@ import MultiStep from "./components/multistep/MultiStep";
 import ProgressBar from "./components/progressbar/ProgressBar";
 import FileExplorer from "./components/fileExplorer/FileExplorer";
 import data from "./service/fileData.json";
+import Tab from "./components/tab/Tab";
 function App() {
   return (
     <>
-          <h1>File Explorer</h1>
-      <FileExplorer fileData={data} />
+      <Tab/>
     </>
   );
 }

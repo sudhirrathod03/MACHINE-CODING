@@ -1,0 +1,39 @@
+.tabmainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  align-items: center;
+}
+
+.tabContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.tabs {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+  background-color: #222831;
+  color: white;
+  border-radius: 5px;
+}
+.contents {
+  border: 1px solid black;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  background-color:  #393E46;
+}
+
+.active {
+  background-color:white;
+  color: black;
+
+}
