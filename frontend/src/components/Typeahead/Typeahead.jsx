@@ -15,6 +15,7 @@ function Typeahead() {
 
   const cache = useRef({});
   //debouncing
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedQuery(query);
